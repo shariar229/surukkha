@@ -1,0 +1,13 @@
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3VzdG9tLmNzcyIsInNvdXJjZXMiOlsiY3VzdG9tLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9 */
+
+/*# sourceMappingURL=custom.css.map */
+
+.sidebar-gone1 {
+    left: -250px !important;
+    transition: left 0.5s;
+}
+
+.sidebar-show1 {
+    left: 0 !important;
+    transition: left 0.5s;
+}

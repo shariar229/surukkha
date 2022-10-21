@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>সুরক্ষা : কোভিড-১৯ ভ্যাকসিনের জন্য নিবন্ধন করুন</title>
+    <!-- General CSS Files -->
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/css/app.min.css">
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/bundles/datatables/datatables.min.css">
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/bundles/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/bundles/summernote/summernote-bs4.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/css/style.css">
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/css/components.css">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)/assets/css/custom.css">
+    <!--<link rel='shortcut icon' type='image/x-icon' href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/img/favicon.icon" />-->
+    <link rel="icon" type="image/x-icon" href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/img/mainicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+
+    <style>
+        /* .dropdown-menu {
+    margin: 0.125rem -105px 0;
+} */
+
+        .main-sidebar {
+            box-shadow: 0 4px 25px 0rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            /* background-color: #fff; */
+            z-index: 880;
+            left: 0;
+            background-image: linear-gradient(#e664ce, #c567f0);
+        }
+
+        ul.sidebar-menu li a {
+            color: #fff !important;
+        }
+
+        ul.sidebar-menu li a {
+            color: #fff !important;
+        }
+
+        .modal-confirm {
+            color: #636363;
+            width: 400px;
+        }
+
+        .modal-confirm .modal-content {
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .modal-confirm .modal-header {
+            border-bottom: none;
+            position: relative;
+        }
+
+        .modal-confirm h4 {
+            text-align: center;
+            font-size: 26px;
+            margin: 30px 0 -10px;
+        }
+
+        .modal-confirm .close {
+            position: absolute;
+            top: -5px;
+            right: -2px;
+        }
+
+        .modal-confirm .modal-body {
+            color: #999;
+        }
+
+        .modal-confirm .modal-footer {
+            border: none;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 13px;
+            padding: 10px 15px 25px;
+        }
+
+        .modal-confirm .modal-footer a {
+            color: #999;
+        }
+
+        .modal-confirm .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            border-radius: 50%;
+            z-index: 9;
+            text-align: center;
+            border: 3px solid #f15e5e;
+        }
+
+        .modal-confirm .icon-box i {
+            color: #f15e5e;
+            font-size: 46px;
+            display: inline-block;
+            margin-top: 13px;
+        }
+
+        .modal-confirm .btn,
+        .modal-confirm .btn:active {
+            color: #fff;
+            border-radius: 4px;
+            background: #60c7c1;
+            text-decoration: none;
+            transition: all 0.4s;
+            line-height: normal;
+            min-width: 120px;
+            border: none;
+            min-height: 40px;
+            border-radius: 3px;
+            margin: 0 5px;
+        }
+
+        .modal-confirm .btn-secondary {
+            background: #c1c1c1;
+        }
+
+        .modal-confirm .btn-secondary:hover,
+        .modal-confirm .btn-secondary:focus {
+            background: #a8a8a8;
+        }
+
+        .modal-confirm .btn-danger {
+            background: #f15e5e;
+        }
+
+        .modal-confirm .btn-danger:hover,
+        .modal-confirm .btn-danger:focus {
+            background: #ee3535;
+        }
+
+        .bottomTabMehidi .containerm {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 0;
+        }
+
+        // End Codepen spesific styling
+        .bottomTabMehidi .menum {
+            display: flex;
+            flex-grow: 1;
+            height: 72px;
+            max-width: 370px;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 1px 0 rgba(#342ead, 0.25), 0 15px 30px 0 rgba(#342ead, 0.1);
+        }
+
+        .bottomTabMehidi .menu-itemm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            text-decoration: none;
+            &:focus,
+            &:hover {
+                outline: none;
+                .material-icons {
+                    font-family: "Material Icons";
+                    color: #342ead;
+                }
+                .menu-item-labelm {
+                    color: #342ead;
+                }
+            }
+        }
+
+        .bottomTabMehidi .material-icons {
+            font-family: "Material Icons Outlined";
+            display: block;
+            margin-bottom: 4px;
+            font-size: 26px;
+            color: mix(#fff, #342ead, 60%);
+            transition: 0.25s ease;
+        }
+
+        .bottomTabMehidi .menu-item-labelm {
+            display: block;
+            font-size: 13px;
+            color: mix(#fff, #342ead, 70%);
+            transition: 0.25s ease;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .modal-confirm .modal-content {
+                width: 340px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar sticky" style="left:0;">
+
+                <div class="form-inline mr-auto d-none d-md-block">
+                    <ul class="navbar-nav mr-3">
+                        <li id="mynavbar_mehidi" style="background: #333;
+    border-radius: 10px;">
+                            <a data-toggle='sidebar' id="sidebar_mehidi" class="nav-link nav-link-lg collapse-btn imgremove">
+            <i data-feather="menu"></i>
+  
+          </a>
+
+                        </li>
+                        <span class="ddym"></span>
+                    </ul>
+                </div>
+                <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;">
+                    <p style="margin:0px;    margin: 0px;
+      font-size: 18px;
+      margin-right: 15px;
+      color: #fff;
+      font-weight: bold;">110.00 ৳</p>
+                    <!--<a href="https://shop.bkash.com/style-collection01758789207/pay/bdt500/8MrVeQ" class="btn btn-sm btn-success"  target="_blank">Add Amount</a>-->
+                    <a href="#addAmount" class="btn btn-sm btn-success" data-toggle="modal" target="_blank">Add Amount</a>
+
+
+                </div>
+
+                <!-- <ul class="navbar-nav navbar-right">
+      <li class="dropdown"><a href="#" data-toggle="dropdown"
+          class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/img/user.png"
+            class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+        <div class="dropdown-menu dropdown-menu-right pullDown">
+          <div class="dropdown-title">Hello Admin</div>
+          <div class="dropdown-divider"></div>
+          <a href="" class="dropdown-item has-icon text-danger"><span class="acCSS"> Logout</span><i class="fas fa-sign-out-alt"></i>
+  
+          </a>
+        </div>
+      </li>
+    </ul> -->
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" aria-expanded="true" style="color:#000">Shariar123</a>
+                    <div class="dropdown-menu">
+                        <!--
+                      <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
+  
+                      <div class="dropdown-divider"></div> -->
+                        <a href="" class="dropdown-item has-icon"><span class="acCSS">Setting</span><i class="fas fa-edit"></i>
+                    <a href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/logout" class="dropdown-item has-icon text-danger"><span class="acCSS"> Logout</span><i class="fas fa-sign-out-alt"></i>
+  
+          </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-sidebar sidebar-gone1 sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <!-- <br> -->
+                        <img src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/img/logo-placeholder-image.png" class="header-logo" style="width:50%" />
+                        <!--<h4 class="logo-name">্ষা</h4>-->
+                        <br>
+                        <br>
+                    </div>
+                    <style>
+                        /* hr {
+          margin-top: 0px;
+          margin-bottom: 1rem;
+          border: 0;
+          border-top: 1px solid #0000001a;
+        } */
+
+                        .main-sidebar .sidebar-menu li a {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                            padding: 0 12px !important;
+                            width: 100%;
+                            letter-spacing: 0.3px;
+                            color: #60686f;
+                            font-weight: 600;
+                            text-decoration: none;
+                        }
+                    </style>
+                    <!-- <div class="sidebar-user">
+              <div class="sidebar-user-picture">
+                <img alt="image" src="assets/img/user.png">
+              </div> -->
+                    <!-- <div class="sidebar-user-details">
+                <div class="user-name">Olivia Thomas</div>
+                <div class="user-role">Administrator</div>
+                <div class="sidebar-userpic-btn">
+                  <a href="profile.html" data-toggle="tooltip" title="Profile">
+                    <i data-feather="user"></i>
+                  </a>
+                  <a href="email_inbox.html" data-toggle="tooltip" title="Mail">
+                    <i data-feather="mail"></i>
+                  </a>
+                  <a href="chat.html" data-toggle="tooltip" title="Chat">
+                    <i data-feather="message-square"></i>
+                  </a>
+                  <a href="login.html" data-toggle="tooltip" title="Log Out">
+                    <i data-feather="log-out"></i>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+                    <ul class="sidebar-menu">
+                        <li class="dropdown">
+                            <a href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/create/file/submission" class="nav-link"><i class="fas fa-chart-pie"></i><span >Create File Submission</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/file/submission/list" class="nav-link"><i class="fas fa-list"></i><span >File Submission List</span></a>
+                        </li>
+
+                        <br>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content" style="padding-left:30px">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>CREATE NEW FILE SUBMISSION</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form action="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/member/store" method="post">
+                                        <input type="hidden" name="_token" value="qkzN6t6xGUI07hH0V54sPsvQNkCxuxGV6ZtamsPs">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <h4 class="text-left" style="font-weight: bold; margin-left: 10px;">Beneficiary Information</h4>
+                                                    <div class="col-sm-12">
+                                                        <label for="certificate_no">Certificate No <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="certificate_no" readonly="" name="certificate_no" placeholder="Certificate No" value="BD243719076571">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label id="idNoChangeLabel" for="nid">National ID</label>
+                                                        <input type="text" class="form-control" id="idNoChangeInput" name="nid" placeholder="National ID" value="">
+                                                        <a id="idNoChangeBtn" style="color: blue;
+    font-weight: bold;
+    margin-top: 2px;
+    display: block;
+    cursor: pointer;">Use Birth Reg. Cert. No</a>
+                                                    </div>
+                                                    <input type="hidden" id="idNoChange" value="nid" name="idNoChange" />
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="passport">Passport No</label>
+                                                        <input type="text" class="form-control" id="passport" name="passport" placeholder="Passport No" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="nationality">Nationality <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality" readonly="" value="Bangladeshi">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="name">Name <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="name">Date of Birth <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control datepicker" id="dob" name="dob" placeholder="Select Your Date of Birth" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="gender">Gender <span class="text-danger">*</span></label>
+                                                        <select name="gender" id="gender" class="form-control">
+                                            <option value="">Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <h4 class="text-left pt-2" style="font-weight: bold">Vaccination Details</h4>
+                                                    <div class="col-sm-12">
+                                                        <label for="date_of_dose_1">Date of Vaccination (Dose 1)</label>
+                                                        <input type="text" class="form-control datepicker" id="date_of_dose_1" name="date_of_dose_1" placeholder="Date of Vaccination (Dose 1)" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="name_of_dose_1">Name of Vaccine (Dose 1)</label>
+                                                        <select name="name_of_dose_1" id="name_of_dose_1" class="form-control changeVaccine">
+                                            <option value="">Select One</option>
+                                            <option value="Pfizer (Pfizer-BioNTech)">Pfizer (Pfizer-BioNTech)</option>
+                                            <option value="Moderna (Moderna)">Moderna (Moderna)</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                                        <input type="text" class="form-control d-none" id="name_of_dose_1_other" name="name_of_dose_1_other" placeholder="Name of Vaccine (Dose 1)" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="date_of_dose_2">Date of Vaccination (Dose 2)</label>
+                                                        <input type="text" class="form-control datepicker" id="date_of_dose_2" name="date_of_dose_2" placeholder="Date of Vaccination (Dose 2)" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="name_of_dose_2">Name of Vaccine (Dose 2)</label>
+                                                        <select name="name_of_dose_2" id="name_of_dose_2" class="form-control changeVaccine">
+                                            <option value="">Select One</option>
+                                            <option value="Pfizer (Pfizer-BioNTech)">Pfizer (Pfizer-BioNTech)</option>
+                                            <option value="Moderna (Moderna)">Moderna (Moderna)</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                                        <input type="text" class="form-control d-none" id="name_of_dose_2_other" name="name_of_dose_2_other" placeholder="Name of Vaccine (Dose 2)" value="">
+                                                    </div>
+
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="date_of_dose_3">Date of Vaccination (Dose 3)</label>
+                                                        <input type="text" class="form-control datepicker" id="date_of_dose_3" name="date_of_dose_3" placeholder="Date of Vaccination (Dose 3)" value="">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="name_of_dose_3">Name of Vaccine (Dose 3)</label>
+                                                        <select name="name_of_dose_3" id="name_of_dose_3" class="form-control changeVaccine">
+                                            <option value="">Select One</option>
+                                            <option value="Pfizer (Pfizer-BioNTech)">Pfizer (Pfizer-BioNTech)</option>
+                                            <option value="Moderna (Moderna)">Moderna (Moderna)</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                                        <input type="text" class="form-control d-none" id="name_of_dose_3_other" name="name_of_dose_3_other" placeholder="Name of Vaccine (Dose 3)" value="">
+                                                    </div>
+
+
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="vaccination_center">Vaccination Center</label>
+                                                        <select id="vaccination_center" class="form-control" name="vaccination_center" required="">
+                                       
+                                            <option value="Bagerhat 250 Bed Hospital">Bagerhat 250 Bed Hospital</option>
+                                            <option value="Bandarban Sadar Hospital">Bandarban Sadar Hospital</option>
+                                            <option value="Barguna Zilla Sadar Government Hospital">Barguna Zilla Sadar Government Hospital</option>
+                                            <option value="Sher-E-Bangla Medical College Hospital">Sher-E-Bangla Medical College Hospital</option>
+                                            <option value="Bhola 250 bed District Sadar Hospital">Bhola 250 bed District Sadar Hospital</option>
+                                            <option value="Bogra 250 bed Mohammad Ali District Hospital">Bogra 250 bed Mohammad Ali District Hospital</option>
+                                            <option value="250 Bedded General Hospital, Brahmanbaria">250 Bedded General Hospital, Brahmanbaria</option>
+                                            <option value="Chandpur 250 Bed General Hospital">Chandpur 250 Bed General Hospital</option>
+                                            <option value="Chittagong 250 bed general hospital">Chittagong 250 bed general hospital</option>
+                                            <option value="Chuadanga Sadar Hospital">Chuadanga Sadar Hospital</option>
+                                            <option value="Comilla Medical College Hospital">Comilla Medical College Hospital</option>
+                                            <option value="250 Bed District Sadar Hospital, Cox's Bazar">250 Bed District Sadar Hospital, Cox's Bazar</option>
+                                            <option value="Dhaka Medical College Hospital">Dhaka Medical College Hospital</option>
+                                            <option value="Dinajpur 250 bed General Hospital">Dinajpur 250 bed General Hospital</option>
+                                            <option value="Bangabandhu Sheikh Mujib Medical College and Hospital">Bangabandhu Sheikh Mujib Medical College and Hospital</option>
+                                            <option value="Feni Government General Hospital">Feni Government General Hospital</option>
+                                            <option value="Zilla Government Hospital, Gaibandha">Zilla Government Hospital, Gaibandha</option>
+                                            <option value="Gazipur Sadar Upazila Health complex, Gazipur">Gazipur Sadar Upazila Health complex, Gazipur</option>
+                                            <option value="250 Bedded General Hospital, Gopalganj">250 Bedded General Hospital, Gopalganj</option>
+                                            <option value="Adhunik Zilla Sadar Hospital, Habiganj">Adhunik Zilla Sadar Hospital, Habiganj</option>
+                                            <option value="Joypurhat Adhunik Hospital">Joypurhat Adhunik Hospital</option>
+                                            <option value="250 Bed Jamalpur General Hospital, Jamalpur">250 Bed Jamalpur General Hospital, Jamalpur</option>
+                                            <option value="Jessore General Hospital">Jessore General Hospital</option>
+                                            <option value="Jhalokathi Sadar Hospital, Jhalokati">Jhalokathi Sadar Hospital, Jhalokati</option>
+                                            <option value="Jhenaidah Sadar Hospital">Jhenaidah Sadar Hospital</option>
+                                            <option value="Khagrachari District Sadar Hospital">Khagrachari District Sadar Hospital</option>
+                                            <option value="Khulna 250 Bed General Hospital">Khulna 250 Bed General Hospital</option>
+                                            <option value="Kishoreganj 250 Bed District Sadar Hospital">Kishoreganj 250 Bed District Sadar Hospital</option>
+                                            <option value="Kurigram General Hospital">Kurigram General Hospital</option>
+                                            <option value="Kushtia General Hospital">Kushtia General Hospital</option>
+                                            <option value="Lakshmipur Sadar Hospital">Lakshmipur Sadar Hospital</option>
+                                            <option value="Lalmonirhat Sadar Hospital">Lalmonirhat Sadar Hospital</option>
+                                            <option value="Madaripur Sadar Hospital">Madaripur Sadar Hospital</option>
+                                            <option value="Chittagong Medical College Hospital">Chittagong Medical College Hospital</option>
+                                            <option value="Sheikh Russel National Gastroliver Institute &amp; Hospital">Sheikh Russel National Gastroliver Institute &amp; Hospital</option>
+                                            <option value="Shaheed Suhrawardy Medical College &amp; Hospital">Shaheed Suhrawardy Medical College &amp; Hospital</option>
+                                            <option value="Kurmitola 500 Bed General Hospital">Kurmitola 500 Bed General Hospital</option>
+                                            <option value="Dhaka Metropolitan General Hospital">Dhaka Metropolitan General Hospital</option>
+                                            <option value="Central Police Hospital, Rajarbag, Dhaka">Central Police Hospital, Rajarbag, Dhaka</option>
+                                            <option value="Sheikh Hasina National Institute of Burn &amp; Plastic Surgery ">Sheikh Hasina National Institute of Burn &amp; Plastic Surgery </option>
+                                            <option value="Mugda 500 Bed General Hospital">Mugda 500 Bed General Hospital</option>
+                                            <option value="Sir Salimullah Medical College Mitford Hospital">Sir Salimullah Medical College Mitford Hospital</option>
+                                            <option value="DNCC Dedicated Covid-19 Hospital, Dhaka">DNCC Dedicated Covid-19 Hospital, Dhaka</option>
+                                            <option value="Police Hospital, Chittagong">Police Hospital, Chittagong</option>
+                                            <option value="Combined Military Hospital (CMH)">Combined Military Hospital (CMH)</option>
+                                            <option value="Bondar Tila Maternity Hospital">Bondar Tila Maternity Hospital</option>
+                                            <option value="City Corporation General Hospital, Chittagong">City Corporation General Hospital, Chittagong</option>
+                                            <option value="Safa Motaleb Maternity Hospital">Safa Motaleb Maternity Hospital</option>
+                                            <option value="Mostafa-Hakim Maternity Hospital">Mostafa-Hakim Maternity Hospital</option>
+                                            <option value="BNS Patenga, Chittagong">BNS Patenga, Chittagong</option>
+                                            <option value="Medical Squadron, BAF Zahur, Chittagong">Medical Squadron, BAF Zahur, Chittagong</option>
+                                            <option value="Chattogram Port Hospital">Chattogram Port Hospital</option>
+                                            <option value="Upazila Health Complex, Anowara">Upazila Health Complex, Anowara</option>
+                                            <option value="Upazila Health Complex, Karnafuli">Upazila Health Complex, Karnafuli</option>
+                                            <option value="Upazila Health Complex, Hathazari">Upazila Health Complex, Hathazari</option>
+                                            <option value="Barisal (sadar) Upazila Health Office">Barisal (sadar) Upazila Health Office</option>
+                                            <option value="Zilla Sadar Hospital, Barisal">Zilla Sadar Hospital, Barisal</option>
+                                            <option value="Police Hospital, Barisal">Police Hospital, Barisal</option>
+                                            <option value="Upazila Health Complex, Gauranadi">Upazila Health Complex, Gauranadi</option>
+                                            <option value="250 Bed General Hospital, Khulna">250 Bed General Hospital, Khulna</option>
+                                            <option value="Khulna Medical College Hospital">Khulna Medical College Hospital</option>
+                                            <option value="Police Hospital, Khulna">Police Hospital, Khulna</option>
+                                            <option value="BNS Upsham Khulna">BNS Upsham Khulna</option>
+                                            <option value="Shaheed Sheikh Abu Naser Specialized Hospital">Shaheed Sheikh Abu Naser Specialized Hospital</option>
+                                            <option value="Bogura (sadar) Upazila Health Office">Bogura (sadar) Upazila Health Office</option>
+                                            <option value="Rajshahi Medical College Hospital">Rajshahi Medical College Hospital</option>
+                                            <option value="Police Hospital, Rajshahi">Police Hospital, Rajshahi</option>
+                                            <option value="Combined Military Hospital (CMH), Rajshahi">Combined Military Hospital (CMH), Rajshahi</option>
+                                            <option value="Infected Disease Hospital">Infected Disease Hospital</option>
+                                            <option value="250 Bed Zilla Sadar Hospital, Feni">250 Bed Zilla Sadar Hospital, Feni</option>
+                                            <option value="Feni (sadar) Upazila Health Office">Feni (sadar) Upazila Health Office</option>
+                                            <option value="Upazila Health Complex, Dagonbhuiyan">Upazila Health Complex, Dagonbhuiyan</option>
+                                            <option value="Police Hospital, Feni">Police Hospital, Feni</option>
+                                            <option value="250 Bed General Hospital, Hobiganj">250 Bed General Hospital, Hobiganj</option>
+                                            <option value="Moulavibazar 250 Bed Zilla Sadar Hospital">Moulavibazar 250 Bed Zilla Sadar Hospital</option>
+                                            <option value="Sunamganj 250 Bed Zilla Sadar Hospital">Sunamganj 250 Bed Zilla Sadar Hospital</option>
+                                            <option value="Sylhet MAG Osmani Medical College Hospital-2">Sylhet MAG Osmani Medical College Hospital-2</option>
+                                            <option value="Combined Military Hospital (CMH), Jalalabad">Combined Military Hospital (CMH), Jalalabad</option>
+                                            <option value="Sylhet (sadar) Upazila Health Office">Sylhet (sadar) Upazila Health Office</option>
+                                            <option value="Sylhet M.A.G Osmani Medical College Hospital">Sylhet M.A.G Osmani Medical College Hospital</option>
+                                            <option value="Police Hospital, Sylhet">Police Hospital, Sylhet</option>
+                                            <option value="Zilla Sadar Hospital, Comilla">Zilla Sadar Hospital, Comilla</option>
+                                            <option value="Combined Military Hospital (CMH), Comilla">Combined Military Hospital (CMH), Comilla</option>
+                                            <option value="250 Bed General Hospital, Kishoreganj">250 Bed General Hospital, Kishoreganj</option>
+                                            <option value="Jessore 250 Bed General  Hospital">Jessore 250 Bed General  Hospital</option>
+                                            <option value="250 bed General hospital, habiganj">250 bed General hospital, habiganj</option>
+                                            <option value="Magura 250 bed District Hospital">Magura 250 bed District Hospital</option>
+                                            <option value="250 Bed District Hospital, Manikganj">250 Bed District Hospital, Manikganj</option>
+                                            <option value="Meherpur 250 Bed District Hospital">Meherpur 250 Bed District Hospital</option>
+                                            <option value="Moulvibazar Sodor Hospital">Moulvibazar Sodor Hospital</option>
+                                            <option value="Munshiganj 250 bed District Hospital">Munshiganj 250 bed District Hospital</option>
+                                            <option value="Mymensingh gov Medical Hospital">Mymensingh gov Medical Hospital</option>
+                                            <option value="Naogaon 250 bed District Hospital">Naogaon 250 bed District Hospital</option>
+                                            <option value="Narail Sadar Hospital">Narail Sadar Hospital</option>
+                                            <option value="Narayanganj 300 Bed Hospital">Narayanganj 300 Bed Hospital</option>
+                                            <option value="Narsingdi 100 Bed Zilla Hospital">Narsingdi 100 Bed Zilla Hospital</option>
+                                            <option value="Natore Sadar Hospital">Natore Sadar Hospital</option>
+                                            <option value="Nawabganj Upazila Health Complex">Nawabganj Upazila Health Complex</option>
+                                            <option value="Netrakona Sadar Hospital">Netrakona Sadar Hospital</option>
+                                            <option value="Nilphamari 250 bed District Hospital">Nilphamari 250 bed District Hospital</option>
+                                            <option value="Noakhali 250 Bed General Hospital">Noakhali 250 Bed General Hospital</option>
+                                            <option value="Pabna 250 bed General Hospital">Pabna 250 bed General Hospital</option>
+                                            <option value="Panchagarh District Hospital">Panchagarh District Hospital</option>
+                                            <option value="Parbatya Chattagram Government Hospital">Parbatya Chattagram Government Hospital</option>
+                                            <option value="Patuakhali 250 bed Sadar Hospital">Patuakhali 250 bed Sadar Hospital</option>
+                                            <option value="Pirojpur District Hospital">Pirojpur District Hospital</option>
+                                            <option value="Rajbari General Hospital">Rajbari General Hospital</option>
+                                            <option value="Department Of Orthopedic Surgery And Traumatology (Gent's)">Department Of Orthopedic Surgery And Traumatology (Gent's)</option>
+                                            <option value="Upazila Health Complex, Sadar Rangpur">Upazila Health Complex, Sadar Rangpur</option>
+                                            <option value="Satkhira Sadar Hospital">Satkhira Sadar Hospital</option>
+                                            <option value="Shariatpur Sadar Hospital">Shariatpur Sadar Hospital</option>
+                                            <option value="District Hospital, Sherpur">District Hospital, Sherpur</option>
+                                            <option value="Sheikh Fazilatunnessa Mujib General Hospital, Sirajganj">Sheikh Fazilatunnessa Mujib General Hospital, Sirajganj</option>
+                                            <option value="Sunamganj Sadar Hospital">Sunamganj Sadar Hospital</option>
+                                            <option value="Sylhet District Hospital">Sylhet District Hospital</option>
+                                            <option value="Tangail 250 Bed District Hospital">Tangail 250 Bed District Hospital</option>
+                                            <option value="Adhunik Sadar Hospital">Adhunik Sadar Hospital</option>
+                                             <option value="Other">Other</option>
+                                    </select>
+                                                        <input type="text" class="form-control d-none" id="vaccination_center_others" name="vaccination_center_others" placeholder="Vaccination Center Name" value="">
+
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="vaccinated_by">Vaccinated By</label>
+                                                        <input type="text" class="form-control" id="vaccinated_by" name="vaccinated_by" placeholder="Vaccinated By" readonly="" value="Directorate General of Health Services (DGHS)">
+                                                    </div>
+                                                    <div class="col-sm-12 pt-3">
+                                                        <label for="total_dose">Total Doses Given</label>
+                                                        <input type="text" class="form-control" id="total_dose" name="total_dose" placeholder="Total Doses Given" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-2">
+                                            <div class="col-md-4 col-sm-12 offset-md-4">
+                                                <center>
+
+                                                    <button type="submit" class="btn btn-success">Submit</button>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="addAmount" class="modal fade">
+                <div class="modal-dialog modal-confirm">
+                    <div class="modal-content">
+                        <form id="addAmountSubmit" method="post">
+                            <input type="hidden" name="_token" value="qkzN6t6xGUI07hH0V54sPsvQNkCxuxGV6ZtamsPs">
+                            <div class="row">
+                                <div class="pt-3">
+                                    <label for="amount">Minimum Deposit Amount</label>
+                                    <input disabled="true" type="text" required class="form-control" id="uddokpayAmount" name="amount" placeholder="Enter Amount" value="">
+                                </div>
+                                <input type="hidden" id="userId" name="userId" value="">
+                            </div>
+
+                            <div class="modal-footer justify-content-center">
+
+
+
+
+                                <button type="submit" id="amountSubmitButton" class="btn btn-danger">Submit</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="bottomTabMehidi  d-sm-block d-md-none d-lg-none d-xl-none">
+                <div class="containerm">
+                    <!-- code here -->
+                    <div class="menum" style="display: flex;">
+                        <a href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/create/file/submission" class="menu-itemm">
+        <span class="material-icons">list</span>
+
+        <span class="menu-item-labelm">Create File</span>
+      </a>
+                        <a href="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/user/file/submission/list" class="menu-itemm">
+        <span class="material-icons">list</span>
+        <span class="menu-item-labelm">File List</span>
+      </a>
+
+
+                        <!--<a href="https://tawk.to/chat/6318f79b37898912e967d63a/1gcd7l7j7" target="_blank" class="menu-itemm">-->
+
+                        <a href="https://wa.me/8801675299177?text=Hello" target="_blank" class="menu-itemm">
+        <span class="material-icons">chat</span>
+        <span class="menu-item-labelm">Live Chat</span>
+      </a>
+                    </div>
+                    <!-- end of code -->
+                </div>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2022
+                    <div class="bullet"></div> Surokkha <a href="#"></a>
+                </div>
+                <div class="footer-right">
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script src="https://surokkha.gov.bd.everify-online.com/assets/js/app.min.js"></script>
+    <!-- JS Libraies -->
+
+
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/bundles/datatables/datatables.min.js"></script>
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/bundles/summernote/summernote-bs4.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/js/page/datatables.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/customjs/jquery-1.9.1.js"></script>
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/customjs/jquery-ui.js"></script>
+    <!-- Template JS File -->
+    <script src="C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/js/scripts.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        $('#vaccination_center').on('change', function() {
+            if ($(this).val() == 'Other') {
+                $('#vaccination_center_others').removeClass('d-none');
+            } else {
+                $('#vaccination_center_others').addClass('d-none');
+            }
+        })
+        $('#name_of_dose_1').on('change', function() {
+            if ($(this).val() == 'Other') {
+                $('#name_of_dose_1_other').removeClass('d-none');
+            } else {
+                $('#name_of_dose_1_other').addClass('d-none');
+            }
+        })
+        $('#name_of_dose_2').on('change', function() {
+            if ($(this).val() == 'Other') {
+                $('#name_of_dose_2_other').removeClass('d-none');
+            } else {
+                $('#name_of_dose_2_other').addClass('d-none');
+            }
+        })
+        $('#name_of_dose_3').on('change', function() {
+            if ($(this).val() == 'Other') {
+                $('#name_of_dose_3_other').removeClass('d-none');
+            } else {
+                $('#name_of_dose_3_other').addClass('d-none');
+            }
+        })
+
+        $('#idNoChangeBtn').on('click', function() {
+            console.log($(this).text())
+            if ($(this).text() == 'Use National ID') {
+                $(this).text('Use Birth Reg. Cert. No')
+                $('#idNoChangeLabel').text('National ID');
+                $('#idNoChangeInput').attr({
+                    name: "nid",
+                    placeholder: "National ID"
+                })
+                $('#idNoChange').val('nid');
+            } else {
+                $(this).text('Use National ID')
+
+
+                $('#idNoChangeLabel').text('Birth Reg. Cert. No');
+                $('#idNoChangeInput').attr({
+                    name: "birth_cert_no",
+                    placeholder: "Birth Reg. Cert. No"
+                })
+                $('#idNoChange').val('birth_cert_no');
+            }
+        })
+        // var dateformat = 'dd/mm/yyyy';
+
+
+
+        // $('select').on('change', function() {
+        // 	dateformat = $(this).val();
+        //   $('.hasDatepicker').each(updateDateFormat);
+        // });
+
+        // function updateDateFormat(i,elem) {
+
+        //     var d = $(elem).datepicker('getDate');
+
+        //     $(elem).datepicker('destroy');  
+        //     $(elem).datepicker({
+        // 	    autoclose: true,
+        // 	    format: dateformat
+        // 	  });
+        //   	$(elem).datepicker('setDate', d);
+
+        // }
+
+        // });
+    </script>
+    <script>
+        $(".datepicker").datepicker({
+            dateFormat: 'dd-mm-yy'
+        }).val();
+
+        //     $( ".datepicker" ).datepicker({
+        //   altFormat: "dd-mm-yyyy"
+        // });
+    </script>
+
+
+    <script>
+        console.log("hello mehidi1");
+        $("#mynavbar_mehidi").click(function() {
+            console.log("clided");
+            var body = $(".main-sidebar"),
+                w = $(window);
+
+            // if (w.outerWidth() <= 1024) {
+            body.removeClass("search-show search-gone");
+            if (body.hasClass("sidebar-gone1")) {
+                body.removeClass("sidebar-gone1");
+                body.addClass("sidebar-show1");
+                $("#sidebar_mehidi").html(`
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`);
+
+                w = $(window);
+
+                if (w.outerWidth() > 200) {
+                    $('.main-content').css({
+                        paddingLeft: '250px'
+                    })
+
+                }
+
+            } else {
+                body.addClass("sidebar-gone1");
+                body.removeClass("sidebar-show1");
+                $("#sidebar_mehidi").html(`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`);
+                $('.main-content').css({
+                    paddingLeft: '35px'
+                })
+            }
+
+            //  update_sidebar_nicescroll();
+            // } else {
+            //   body.removeClass("search-show search-gone");
+            //   if (body.hasClass("sidebar-mini")) {
+            //     toggle_sidebar_mini(false);
+            //   } else {
+            //     toggle_sidebar_mini(true);
+            //   }
+            // }
+
+            return false;
+        });
+        $(document).ready(function() {
+            console.log("hello mehidi");
+            // jQuery methods go here...
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var requird_amount = 00;
+
+
+        $('#uddokpayAmount').val(requird_amount)
+
+        async function onSubmit(event) {
+            event.preventDefault();
+
+
+            if ($('#uddokpayAmount').val() < requird_amount) {
+
+                alert("Somthing is wrong!")
+
+            } else {
+
+                const values = {
+                    full_name: "Shariar123",
+                    email: "easymail70@gmail.com",
+                    amount: requird_amount,
+                    metadata: {
+                        id: "818"
+                    },
+                    redirect_url: "https://morshed24.com/payment/success.php?site=2",
+                    cancel_url: "https://morshed24.com/payment/cancel.php?site=2",
+                    webhook_url: "https://morshed24.com/payment/webhook.php?site=2"
+                }
+
+                $("#amountSubmitButton").html(`<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>`);
+
+                var res = await fetch(`https://pay.morshed24.com/api/checkout-v2`, {
+                    method: 'POST',
+                    body: JSON.stringify(values),
+                    headers: {
+
+                        'RT-UDDOKTAPAY-API-KEY': '18b2ca74b5fe2f63d8293687d94fde987925c98f',
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                var data = await res.json();
+
+
+                $("#amountSubmitButton").html(`Submit`);
+
+
+                if (data.status == true) {
+                    window.location.href = data.payment_url;
+
+                } else {
+                    alert("Something is wrong try again!")
+                }
+                console.log(data)
+
+            }
+
+        }
+
+
+        $('#addAmountSubmit').on('submit', onSubmit);
+    </script>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        if ($(window).width() > 720) {
+
+
+            //   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            // (function(){
+            // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            // s1.async=true;
+            // s1.src='https://embed.tawk.to/6318f79b37898912e967d63a/1gcd7l7j7';
+            // s1.charset='UTF-8';
+            // s1.setAttribute('crossorigin','*');
+            // s0.parentNode.insertBefore(s1,s0);
+            // })(); 
+
+
+            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?24615';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+                "enabled": true,
+                "chatButtonSetting": {
+                    "backgroundColor": "#4dc247",
+                    "ctaText": "",
+                    "borderRadius": "17",
+                    "marginLeft": "1",
+                    "marginBottom": "5",
+                    "marginRight": "2",
+                    "position": "right"
+
+                },
+                "brandSetting": {
+                    "brandName": "",
+                    "brandSubTitle": "Surokkha Admin",
+                    "brandImg": "C:\Users\Shariar\Desktop\surokkha.gov.bd.everify_online.com (1)\surokkha.gov.bd.everify-online.com/assets/img/mainicon.png",
+                    "welcomeText": "Hi, there! 👋 <br>How can I help you?",
+                    "messageText": "Hello",
+                    "backgroundColor": "#0a5f54",
+                    "ctaText": "Live Chat With Admin",
+                    "borderRadius": "30",
+                    "autoShow": false,
+                    "phoneNumber": "8801833729229"
+                }
+            };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+
+
+
+        }
+    </script>
+
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
